@@ -10,10 +10,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col justify-center p-6'>
-        <h1 className="text-3xl font-light underline">Hello world</h1>
-        <ul>
+        <h1 className="text-3xl font-light underline mb-6 p-6 bg-gray-500 mr-auto rounded-xl">Hello world</h1>
+        <ul className='flex flex-col gap-4'>
           <li><a href="/damian">Página de Damián</a></li>
           <li><a href="/brenda">Página de Brenda</a></li>
+          <li><a href="/valentina">Página de Valentina</a></li>
+          <li><a href="/isis">Página de Isis</a></li>
+          <li><a href="/lana">Página de Lana</a></li>
+          <li><a href="/tyson">Página de Tyson</a></li>
         </ul>
       </main>
     </>
