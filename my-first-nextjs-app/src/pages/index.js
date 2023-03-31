@@ -19,6 +19,11 @@ export default function Home() {
           <li><a href="/lana">Página de Lana</a></li>
           <li><a href="/tyson">Página de Tyson</a></li>
         </ul>
+      <footer className=' mt-10 flex flex-col gap-5'>
+        <a href='/blog'>EXERCÍCIO SSG - BLOG</a>
+        <a href='/album'>EXERCÍCIO CSR - ALBUM</a>
+        <a href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</a>
+      </footer>
       </main>
     </>
   )
