@@ -5,7 +5,7 @@ const index = ({name ,posts}) => {
     <div>
         <h1>Bem-vindo</h1>
         <p>Blog do {name}</p>
-        <ul>
+        <ul className='list-disc list-inside pl-2'>
             {
                 posts.map((post) => (
                     <li key={post.id}>{post.title}</li>
@@ -24,7 +24,8 @@ export const getStaticProps = async () => {
         props : {
             name: "Damian",
             posts
-        }
+        },
+        revalidate : 7200
     }
 }
 
