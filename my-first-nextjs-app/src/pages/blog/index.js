@@ -8,7 +8,7 @@ const index = ({name ,posts}) => {
         <ul className='list-disc list-inside pl-2'>
             {
                 posts.map((post) => (
-                    <li key={post.id}>{post.title}</li>
+                    <li key={post.id}><a href={`/blog/${post.id}`}>{post.title}</a></li>
                 ))
             }
         </ul>
