@@ -19,6 +19,9 @@ const Album = () => {
   return (
     <div className=' p-10'>
         <h1 className=' border-l border-l-red-600 text-4xl mb-2 pl-2'>Album</h1>
+        {
+            loading && <p className=' text-red-700 text-xl'>Loading...</p>
+        }
         <ul className=' list-disc list-inside'>
             {
                 album.map((albumItem) => (
