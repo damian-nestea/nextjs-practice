@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           <li><a href="/lana">Página de Lana</a></li>
           <li><a href="/tyson">Página de Tyson</a></li>
         </ul>
+        <Script strategy='afterInteractive'>
+          {`window.alert('Carreguei')`}
+        </Script>
       <footer className=' mt-10 flex flex-col gap-5'>
         <a href='/blog'>EXERCÍCIO SSG - BLOG</a>
         <a href='/album'>EXERCÍCIO CSR - ALBUM</a>
