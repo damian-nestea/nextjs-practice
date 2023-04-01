@@ -10,7 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col justify-center p-6'>
-        <h1 className="text-3xl font-light underline mb-6 p-6 bg-gray-500 mr-auto rounded-xl">Hello world</h1>
+        <h1 className="text-3xl font-light underline mb-6 p-6 bg-gray-500 mr-auto rounded-xl">Hello World</h1>
+        Eu sou o {process.env.NEXT_PUBLIC_NOME}
         <ul className='flex flex-col gap-4'>
           <li><a href="/damian">Página de Damián</a></li>
           <li><a href="/brenda">Página de Brenda</a></li>
