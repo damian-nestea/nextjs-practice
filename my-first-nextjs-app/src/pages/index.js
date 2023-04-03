@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className=' h-screen'>
+      <div className=' h-screen'>
       <header className=' bg-green-300 h-1/6 flex p-10 justify-between'>
         <p>Logo</p>
         <nav>
@@ -44,9 +44,9 @@ export default function Home() {
       <footer className=' bg-gradient-to-br from-orange-400 to-yellow-400 px-6 py-8 mt-10 flex flex-col gap-5'>
         <Link href='/blog' legacyBehavior><a target='_blank'>EXERCÍCIO SSG - BLOG</a></Link>
         <Link href='/album'>EXERCÍCIO CSR - ALBUM</Link>
-        <Link href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
+        <Link className='btn-primary' href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
       </footer>
-      </body>
+      </div>
     </>
   )
 }
