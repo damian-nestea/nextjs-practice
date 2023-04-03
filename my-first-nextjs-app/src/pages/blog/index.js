@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const index = ({name ,posts}) => {
   return (
@@ -8,7 +9,7 @@ const index = ({name ,posts}) => {
         <ul className='list-disc list-inside pl-2'>
             {
                 posts.map((post) => (
-                    <li key={post.id}><a href={`/blog/${post.id}`}>{post.title}</a></li>
+                    <li key={post.id}><Link href={`/blog/${post.id}`}>{post.title}</Link></li>
                 ))
             }
         </ul>
