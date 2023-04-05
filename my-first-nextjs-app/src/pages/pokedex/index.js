@@ -10,7 +10,7 @@ const Pokedex = ({ pokedex }) => {
             Lista de Pokemons:
             {
                 pokedex.map((pokemon , index)=>(
-                    <Pokemon url = {pokemon.url} className=' first-letter:uppercase italic' key={index}><Link href={pokemon.name}>{pokemon.name}</Link></Pokemon>
+                   <Link href={pokemon.name}><Pokemon  className=' first-letter:uppercase italic' pokemon = {pokemon} key={index}></Pokemon></Link>
                 ))
             }
         </ul>
