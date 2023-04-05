@@ -44,7 +44,8 @@ export default function Home() {
       <footer className=' bg-gradient-to-br from-orange-400 to-yellow-400 px-6 py-8 mt-10 flex flex-col gap-5'>
         <Link href='/blog' legacyBehavior><a target='_blank'>EXERCÍCIO SSG - BLOG</a></Link>
         <Link href='/album'>EXERCÍCIO CSR - ALBUM</Link>
-        <Link className='btn-primary' href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
+        <Link href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
+        <Link className='btn-primary' href='/pokedex'>EXERCÍCIO POKEMON API</Link>
       </footer>
       </div>
     </>
