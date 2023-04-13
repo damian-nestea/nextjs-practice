@@ -1,10 +1,12 @@
+import CharacterCard from "../components/characterCard"
+
 const HarryPotterCharacters = ({ characters }) => {
     console.log(characters)
     const personagens = characters.map((personagem) => {
-        return <p key={personagem.id}>{personagem.name}</p>
+        return (<CharacterCard key={personagem.id} personagem={personagem}/>)
     })
     return(
-        <div>
+        <div className=" flex flex-wrap gap-6">
             {personagens}
         </div>
     )
