@@ -1,4 +1,5 @@
-import CharacterCard from "../components/characterCard"
+import Link from "next/link"
+import CharacterCard from "../../../components/characterCard"
 
 const HarryPotterCharacters = ({ characters }) => {
     console.log(characters)
@@ -7,6 +8,7 @@ const HarryPotterCharacters = ({ characters }) => {
     })
     return(
         <main className=" flex flex-col items-center gap-10 p-10">
+            <Link className=" self-end p-4 bg-slate-500 rounded-md text-zinc-50 font-bold uppercase hover:opacity-50" href={'/harryPotterStaff'}> Staff </Link>
             <h1 className=" text-3xl font-bold">Personagens do Harry Potter</h1>
             <section className="flex flex-wrap gap-6 justify-evenly">
                 {personagens} 
