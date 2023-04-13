@@ -6,9 +6,12 @@ const HarryPotterCharacters = ({ characters }) => {
         return (<CharacterCard key={personagem.id} personagem={personagem}/>)
     })
     return(
-        <div className=" flex flex-wrap gap-6">
-            {personagens}
-        </div>
+        <main className=" flex flex-col items-center gap-10 p-10">
+            <h1 className=" text-3xl font-bold">Personagens do Harry Potter</h1>
+            <section className="flex flex-wrap gap-6 justify-evenly">
+                {personagens} 
+            </section>
+        </main>
     )
 }
 
