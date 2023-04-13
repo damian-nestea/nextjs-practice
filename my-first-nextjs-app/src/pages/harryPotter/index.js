@@ -1,7 +1,7 @@
 const HarryPotterCharacters = ({ characters }) => {
     console.log(characters)
     const personagens = characters.map((personagem) => {
-        return <p>{personagem.name}</p>
+        return <p key={personagem.id}>{personagem.name}</p>
     })
     return(
         <div>
@@ -13,7 +13,7 @@ const HarryPotterCharacters = ({ characters }) => {
 export default HarryPotterCharacters;
 
 export const getServerSideProps = async () => {
-    const res = await fetch("https://hp-api.onrender.com/api/characters");
+    const res = await fetch(process.env.NEXT_PUBLIC_API_HP);
     const hpCharacters = await res.json();
     return {
         props: {
