@@ -47,7 +47,7 @@ export default function Home() {
         <Link href='/album'>EXERCÍCIO CSR - ALBUM</Link>
         <Link href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
         <Link href='/harryPotter'>EXERCÍCIO API Harry Potter</Link>
-        <Link href='/harryPotter'>EXERCÍCIO CSS Modules</Link>
+        <Link href='/harryPotterStaff'>EXERCÍCIO CSS Modules</Link>
         <Link className='btn-primary' href='/pokedex'>EXERCÍCIO POKEMON API</Link>
       </footer>
       </div>
