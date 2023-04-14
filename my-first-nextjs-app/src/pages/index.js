@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import Link from 'next/link'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
@@ -41,11 +42,12 @@ export default function Home() {
           {`window.alert('Carreguei')`}
         </Script> */}
       </main>
-      <footer className=' bg-gradient-to-br from-orange-400 to-yellow-400 px-6 py-8 mt-10 flex flex-col gap-5'>
+      <footer className=' bg-gradient-to-br from-orange-400 to-yellow-400 px-6 py-8 mt-10 flex gap-12 flex-wrap'>
         <Link href='/blog' legacyBehavior><a target='_blank'>EXERCÍCIO SSG - BLOG</a></Link>
         <Link href='/album'>EXERCÍCIO CSR - ALBUM</Link>
         <Link href='/todo'>EXERCÍCIO SSR - LISTA DE TAREFAS</Link>
         <Link href='/harryPotter'>EXERCÍCIO API Harry Potter</Link>
+        <Link href='/harryPotterStaff'>EXERCÍCIO CSS Modules</Link>
         <Link className='btn-primary' href='/pokedex'>EXERCÍCIO POKEMON API</Link>
       </footer>
       </div>
