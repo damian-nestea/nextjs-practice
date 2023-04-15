@@ -1,5 +1,5 @@
 import Link from "next/link"
-import CharacterCard from "../../../components/characterCard"
+import CharacterCard from "../../../components/CharacterCard"
 
 const HarryPotterCharacters = ({ characters }) => {
     console.log(characters)

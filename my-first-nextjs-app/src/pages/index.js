@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-
   return (
     <>
       <Head>
@@ -14,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=' h-screen'>
+      <div className=' h-3/4'>
       
         <main className='flex flex-col justify-center items-center p-6'>
           <h1 className=" w-40 flex items-center text-center text-3xl font-light underline mb-6 p-6 bg-gray-500 rounded-xl">Hello World</h1>
