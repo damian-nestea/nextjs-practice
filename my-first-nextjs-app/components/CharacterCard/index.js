@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CharacterCard = ({personagem}) => {
+const CharacterCard = ({ personagem }) => {
   return (
     <article className=' w-60 h-80 flex flex-col items-center  gap-2 p-2 bg-amber-900 rounded-md'>
         <h2 className=' text-xl font-bold'>{personagem.name}</h2>  
