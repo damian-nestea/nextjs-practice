@@ -3,14 +3,13 @@ import React from 'react'
 import Pokemon from './pokemon'
 
 const Pokedex = ({ pokedex }) => {
-    console.log(pokedex)
   return (
     <div className=' p-10'>
         <ul className=' list-disc list-inside space-y-2'>
             Lista de Pokemons:
             {
                 pokedex.map((pokemon , index)=>(
-                   <Link href={pokemon.name}><Pokemon  className=' first-letter:uppercase italic' pokemon = {pokemon} key={index}></Pokemon></Link>
+                   <Link href={`/pokedex/${index + 1}`}><Pokemon  className=' first-letter:uppercase italic' pokemon = {pokemon} key={index}></Pokemon></Link>
                 ))
             }
         </ul>
