@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Navbar from '../Navbar'
 
 const Layout = ({children}) => {
   return (
@@ -7,14 +8,10 @@ const Layout = ({children}) => {
       <header className=' bg-green-300 h-1/6 flex p-10 justify-between'>
         <p>Logo</p>
         <nav>
-          <ul className=' list-none uppercase flex space-x-4'>
-            <li><Link href={'/'}>Home</Link></li>
-            <li><Link href={''}>Contato</Link></li>
-            <li><Link href={''}>Links</Link></li>
-            <li><Link href={''}>Login</Link></li>
-          </ul>
+        <Navbar />
         </nav>
       </header>
+      
       <main>
         {children}
       </main>
