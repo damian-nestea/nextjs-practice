@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 import Pokemon from './pokemon'
+import Head from 'next/head'
 
 const Pokedex = ({ pokedex }) => {
   return (
     <div className=' p-10'>
+        <Head>
+            <title>Pokedex</title>
+        </Head>
         <ul className=' list-disc list-inside space-y-2'>
             Lista de Pokemons:
             {
