@@ -1,12 +1,15 @@
+import Head from 'next/head'
 import React from 'react'
 
 const PokemonPage = ({ pokemon }) => {
   return (
     <div>
+      <Head>
+        <title>Pokemon: {pokemon.name}</title>
+      </Head>
       <h1>{pokemon.name}</h1>
       <p>{pokemon.height}</p>
       <img src={pokemon.sprites.back_default} />
-
     </div>
   )
 }
