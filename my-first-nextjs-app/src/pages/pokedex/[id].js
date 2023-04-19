@@ -3,14 +3,14 @@ import React from 'react'
 
 const PokemonPage = ({ pokemon }) => {
   return (
-    <div>
+    <article className=' flex flex-col mx-auto my-8 gap-3 w-48'>
       <Head>
         <title>Pokemon: {pokemon.name}</title>
       </Head>
-      <h1>{pokemon.name}</h1>
-      <p>{pokemon.height}</p>
-      <img src={pokemon.sprites.back_default} />
-    </div>
+      <h1 className=' text-2xl font-bold first-letter:uppercase text-center'>{pokemon.name}</h1>
+      <p className=' text-center'>Peso: {pokemon.height}kg.</p>
+      <img className=' min-w-full' src={pokemon.sprites.back_default} />
+    </article>
   )
 }
 
