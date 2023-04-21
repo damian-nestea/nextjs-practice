@@ -5,8 +5,10 @@ import Navbar from '../Navbar'
 const Layout = ({children}) => {
   return (
     <div>
-      <header className=' bg-green-300 h-1/6 flex p-10 justify-between'>
-        <p>Logo</p>
+      <header className=' bg-green-300 max-h-24 flex px-10 items-center justify-between'>
+        <div className=' w-28'>
+          <img className=' w-11/12 duration-500 hover:w-full' src='/logo.png' />
+        </div>
         <nav>
         <Navbar />
         </nav>
