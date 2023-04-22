@@ -5,9 +5,26 @@ import Head from 'next/head'
 const index = ({name ,posts}) => {
   return (
     <div>
-        <Head>
-            <title>Blog</title>
-        </Head>
+        <Head>    
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" href="/favicon.ico" />
+        
+            <title>Blog </title>
+            <meta name="title" content="Blog" />
+            <meta name="description" content="Lista de post do Blog do meu portfólio" />
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="http://localhost:3000/blog" />
+            <meta property="og:title" content="Blog" />
+            <meta property="og:description" content="Lista de post do Blog do meu portfólio" />
+            <meta property="og:image" content="http://localhost:3000/logo.png" />
+
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="http://localhost:3000/blog" />
+            <meta property="twitter:title" content="Blog" />
+            <meta property="twitter:description" content="Lista de post do Blog do meu portfólio" />
+            <meta property="twitter:image" content="http://localhost:3000/logo.png"></meta>
+      </Head>
         <h1>Bem-vindo</h1>
         <p>Blog do {name}</p>
         <ul className='list-disc list-inside pl-2'>
