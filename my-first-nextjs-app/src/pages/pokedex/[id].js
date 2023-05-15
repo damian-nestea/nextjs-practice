@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 
 const PokemonPage = ({ pokemon }) => {
+  console.log(pokemon);
   return (
     <article className=" flex flex-col mx-auto my-8 gap-3 w-48">
       <Head>
@@ -10,7 +11,10 @@ const PokemonPage = ({ pokemon }) => {
 
         <title>{pokemon.name}</title>
         <meta name="title" content={pokemon.name} />
-        <meta name="description" content={`Página com o pokemon ${pokemon.name}`} />
+        <meta
+          name="description"
+          content={`Página com o pokemon ${pokemon.name}`}
+        />
 
         <meta property="og:type" content="website" />
         <meta
@@ -18,7 +22,10 @@ const PokemonPage = ({ pokemon }) => {
           content={`http://localhost:3000/pokedex/${pokemon.id}`}
         />
         <meta property="og:title" content={pokemon.name} />
-        <meta property="og:description" content={`Página com o pokemon ${pokemon.name}`} />
+        <meta
+          property="og:description"
+          content={`Página com o pokemon ${pokemon.name}`}
+        />
         <meta property="og:image" content="http://localhost:3000/logo.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -27,7 +34,10 @@ const PokemonPage = ({ pokemon }) => {
           content={`http://localhost:3000/pokedex/${pokemon.id}`}
         />
         <meta property="twitter:title" content={pokemon.name} />
-        <meta property="twitter:description" content={`Página com o pokemon ${pokemon.name}`} />
+        <meta
+          property="twitter:description"
+          content={`Página com o pokemon ${pokemon.name}`}
+        />
         <meta
           property="twitter:image"
           content="http://localhost:3000/logo.png"
@@ -38,6 +48,14 @@ const PokemonPage = ({ pokemon }) => {
       </h1>
       <p className=" text-center">Peso: {pokemon.height}kg.</p>
       <img className=" min-w-full" src={pokemon.sprites.back_default} />
+      <div className=" flex items-center">
+        <h3 className=" font-bold mr-2">Tipo:</h3>
+        {pokemon.types.map((type, index) => (
+          <p key={index} className=" mr-2 first-letter:uppercase text-sm">
+            {type.type.name}
+          </p>
+        ))}
+      </div>
     </article>
   );
 };
@@ -59,7 +77,6 @@ export const getStaticProps = async (context) => {
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`);
   const pokemon = await res.json();
 
-  console.log(pokemon);
   return {
     props: {
       pokemon,
